@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <title>Tip Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div id="tipAmount"></div>
+        <br><br>
+        <div class="calculator">
+            <br>
+            <h3 style="text-align: center; font-weight: bold;">Tip calculator</h3><br>
+            <p style="border-bottom: 2px solid rgba(211, 211, 211, 0.5);"></p>
+            <br>
+            <label for="amount">Bill Amount</label> <br>
+            <button><i class="fa-solid fa-dollar-sign"></i></button><input type="number" id="amount">
+            <br><br>
+
+            <label for="guests">Number Of Guest</label><br>
+            <button><i class="fa-solid fa-person"></i></button><input type="number" id="guests">
+            <br><br>
+
+            <label for="Quality">Quality</label><br>
+            <select  id="Quality">
+                <option disabled selected value="0">Choose...</option>
+                <option value="0.3">30% -Outstanding</option>
+                <option value="0.25">25% -good</option>
+                <option value="0.15">15% -It was good</option>
+                <option value="0.1%">10% -Bad</option>
+                <option value="0.05">5% -Terrible</option>
+            </select><br><br>
+            <div style="text-align: center;">
+                <p style="border-bottom: 2px solid lightgray;"></p>
+<br>
+                <button onclick="calculateFunc()" class="answer"> Calculate</button><br>
+            </div>
+            <br><br>
+        </div>
+        
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
